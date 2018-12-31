@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*框*/
+div.wrap {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+	height: 600px;
+}
+/*滚动的黑白块容器*/
+div.box {
+    position: absolute;
+    top: -150px;
+	width: 400px;
+	height: 600px;
+	/*overflow: hidden;*/
+}
+/*行*/
+div.box div.row {
+    width: 400px;
+    height: 150px;
+}
+/*黑白块*/
+div.box div.row div.col,
+div.box div.row div.col-key {
+	box-sizing: border-box;
+	float: left;
+	width: 100px;
+	height: 150px;
+	border: 1px solid #666;
+}
+/*黑块*/
+div.col-key {
+	background-color: #000;
+}
